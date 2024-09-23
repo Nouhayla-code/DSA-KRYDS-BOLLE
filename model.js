@@ -4,9 +4,7 @@ const grid = [
   [6, 7, 8],
 ];
 
-function init() {
-  window.model = model;
-}
+function init() {}
 
 function writeToCell(row, col, value) {
   grid[row][col] = value;
@@ -19,3 +17,5 @@ function readFromCell(row, col) {
 function dump() {
   console.log(grid);
 }
+
+export { init, writeToCell, readFromCell, dump };
